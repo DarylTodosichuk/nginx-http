@@ -114,7 +114,7 @@
           },
           {
             "type": "ConfigChange"
-          },
+          }
         ]
       }
     },
@@ -241,6 +241,6 @@
       "displayName": "Application Hostname",
       "description": "The exposed hostname that will route to the nginx service, if left blank a value will be defaulted.",
       "value": ""
-    },
+    }
   ]
 }
