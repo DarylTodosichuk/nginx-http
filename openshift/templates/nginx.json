@@ -135,6 +135,9 @@
       "apiVersion": "apps/v1",
       "metadata": {
         "name": "${NAME}",
+        "labels": {
+          "app.openshift.io/runtime": "nginx"
+        },
         "annotations": {
           "description": "Defines how to deploy the application server",
           "template.alpha.openshift.io/wait-for-ready": "true",
