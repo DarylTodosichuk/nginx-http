@@ -56,7 +56,11 @@
         "to": {
           "kind": "Service",
           "name": "${NAME}"
-        }
+        },
+        "tls": {
+          "termination": "edge",
+          "insecureEdgeTerminationPolicy": "Redirect"
+        }        
       }
     },
     {
@@ -201,7 +205,7 @@
       "displayName": "Name",
       "description": "The name assigned to all of the frontend objects defined in this template.",
       "required": true,
-      "value": "nginx-example"
+      "value": "nginx-offline"
     },
     {
       "name": "NAMESPACE",
@@ -229,7 +233,7 @@
       "displayName": "Git Repository URL",
       "description": "The URL of the repository with your application source code.",
       "required": true,
-      "value": "https://github.com/sclorg/nginx-ex.git"
+      "value": "https://github.com/DarylTodosichuk/nginx-http.git"
     },
     {
       "name": "SOURCE_REPOSITORY_REF",
