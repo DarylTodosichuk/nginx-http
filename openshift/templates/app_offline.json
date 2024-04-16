@@ -2,11 +2,11 @@
   "kind": "Template",
   "apiVersion": "template.openshift.io/v1",
   "metadata": {
-    "name": "app_offline",
+    "name": "app-offline",
     "annotations": {
       "openshift.io/display-name": "Nginx HTTP server and a reverse proxy",
       "description": "An example Nginx HTTP server and a reverse proxy (nginx) application that serves static content.",
-      "tags": "app_offline",
+      "tags": "app-offline",
       "iconClass": "icon-nginx",
       "openshift.io/long-description": "This template defines resources needed to develop a static application served by Nginx HTTP server and a reverse proxy (nginx), including a build configuration and application deployment configuration.",
       "openshift.io/provider-display-name": "Red Hat, Inc.",
@@ -153,7 +153,7 @@
           "spec": {
             "containers": [
               {
-                "name": "app_offline",
+                "name": "app-offline",
                 "image": " ",
                 "ports": [
                   {
